@@ -1,0 +1,60 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add prettier --dev --exact
+
+PATH: 
+  /home/user/.zinit/polaris/sbin:/home/user/.zinit/polaris/bin:/home/user/.zinit/polaris/usr/sbin:/home/user/.zinit/polaris/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.21.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+
+npm manifest: 
+  {
+    "name": "api-ambev",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "pretest": "eslint --ignore-path .gitignore .",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon src/index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ednilsonmcs/api-ambev.git"
+    },
+    "author": "ednilsonmcs",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/ednilsonmcs/api-ambev/issues"
+    },
+    "homepage": "https://github.com/ednilsonmcs/api-ambev#readme",
+    "dependencies": {
+      "bcrypt": "^5.0.0",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "mongodb": "^3.5.9",
+      "mongoose": "^5.9.20",
+      "prettier": "^2.0.5"
+    },
+    "devDependencies": {
+      "eslint": "^7.3.1",
+      "eslint-config-strongloop": "^2.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
