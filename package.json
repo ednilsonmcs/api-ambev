@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "eslint --ignore-path .gitignore .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js"
   },
@@ -24,5 +25,9 @@
     "express": "^4.17.1",
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.20"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-strongloop": "^2.1.0"
   }
 }
