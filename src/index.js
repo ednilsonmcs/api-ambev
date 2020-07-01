@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 require('./controller/autenticacaoController')(app);
 
 app.get('/', (req, res) => {
-    res.send({message: 'O megahack começou!!!'})
-})
+  res.send({message: 'O megahack começou!!!'});
+});
 
 app.listen(3000);
