@@ -3,7 +3,7 @@ const { Router } = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const autenticacaoConfig = require('../config/autenticacao');
+const autenticacaoConfig = require('../../config/autenticacao');
 
 const router = Router();
 
