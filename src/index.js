@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 require('./app/controller/index')(app);
 
-
 app.get('/', (req, res) => {
   res.send({message: 'O megahack começou!!!'});
 });
