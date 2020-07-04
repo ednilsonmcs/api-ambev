@@ -5,7 +5,9 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+
 require('./controller/autenticacaoController')(app);
+require('./controller/estabelecimentosController')(app);
 
 app.get('/', (req, res) => {
   res.send({message: 'O megahack começou!!!'});
